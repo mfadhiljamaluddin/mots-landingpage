@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <!-- SWIPER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="dashboard">
@@ -88,85 +90,96 @@
     <section class="team reveal" id="team">
         <h1>Our Team</h1>
         <p>Meet the developers of the game.</p>
-        <swiper-container slides-per-view="4" speed="500" loop="false" css-mode="true" navigation="true" pagination="true">
-            <swiper-slide>
-                <div class="swiper-container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/1.png" alt="">
                     <h3>Delima Danarini</h3>
                     <p>Game Designer & Lead.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="swiper-container">
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/2.png" alt="">
                     <h3>Wahyu Rifai</h3>
                     <p>Lead Artist.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/3.png" alt="">
                     <h3>Ardiansyah Bobihoe</h3>
                     <p>Lead Programmer.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/4.png" alt="">
                     <h3>Fariez Maulana</h3>
                     <p>Level & Gameplay Designer.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+                </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/5.png" alt="">
                     <h3>Rangga Prayosa</h3>
                     <p>Sound Engineer.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/6.png" alt="">
                     <h3>Andito Dawantoro</h3>
                     <p>3D Generalist.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/7.png" alt="">
                     <h3>Wina N. M.</h3>
                     <p>2D/3D Artist.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/8.png" alt="">
                     <h3>Dhia Okta Hanif</h3>
                     <p>2D Artist.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/9.png" alt="">
                     <h3>Nadhirah Fithriyah Gunardi</h3>
                     <p>2D Artist.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/10.png" alt="">
                     <h3>Farhan Ramadhan</h3>
                     <p>Programmer.</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
                     <img src="image/Foto-Tim/11.png" alt="">
                     <h3>Alif Sita Maharani</h3>
                     <p>Programmer.</p>
                 </div>
-            </swiper-slide>
-        </swiper-container>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
     </section>
     
 
@@ -226,33 +239,48 @@
             toTop.classList.remove("active");
         }
     })
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 50,
+  loop: false,
 
-    /*var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-      }
-    });*/
-</script>
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+    },    
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+    },
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+    },
+    1024: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+    },
+  },
+});
+    </script>
 </body>
 </html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<style>
+.swiper {
+  max-width: 100%;
+  height: 300px;
+  background-color: blanchedalmond;
+}
+.swiper-wrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .swiper-slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+  }
+
+</style>
+
+<body>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/1.png" alt="">
+                <h3>Delima Danarini</h3>
+                <p>Game Designer & Lead.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/2.png" alt="">
+                <h3>Wahyu Rifai</h3>
+                <p>Lead Artist.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/3.png" alt="">
+                <h3>Ardiansyah Bobihoe</h3>
+                <p>Lead Programmer.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/4.png" alt="">
+                <h3>Fariez Maulana</h3>
+                <p>Level & Gameplay Designer.</p>
+            </div>
+            </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/5.png" alt="">
+                <h3>Rangga Prayosa</h3>
+                <p>Sound Engineer.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/6.png" alt="">
+                <h3>Andito Dawantoro</h3>
+                <p>3D Generalist.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/7.png" alt="">
+                <h3>Wina N. M.</h3>
+                <p>2D/3D Artist.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/8.png" alt="">
+                <h3>Dhia Okta Hanif</h3>
+                <p>2D Artist.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/9.png" alt="">
+                <h3>Nadhirah Fithriyah Gunardi</h3>
+                <p>2D Artist.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/10.png" alt="">
+                <h3>Farhan Ramadhan</h3>
+                <p>Programmer.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+                <img src="image/Foto-Tim/11.png" alt="">
+                <h3>Alif Sita Maharani</h3>
+                <p>Programmer.</p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 50,
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+    },    
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+    },
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+    },
+    1024: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+    },
+  },
+});
+
+ </script>
+</body>
+</html>
